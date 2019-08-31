@@ -1,6 +1,7 @@
 # tiny
 
-[![npm (scoped)](https://img.shields.io/npm/v/@samfuller01/tiny.svg)]
+![npm (scoped)](https://img.shields.io/npm/v/@samfuller01/tiny.svg)
+[![Build Status](https://dev.azure.com/spfuller01/tiny/_apis/build/status/samfuller01.tiny?branchName=master)](https://dev.azure.com/spfuller01/tiny/_build/latest?definitionId=4&branchName=master)
 
 This is a super tiny JavaScript package designed to make simple calculations very easy. It also makes some `Math` methods easier to use. In the future I will implement all/most of them.
 

@@ -16,7 +16,7 @@ yarn installation:
 ## Usage
 
 ```js
-const tiny = require("@samfuller01/tiny").tiny;
+const tiny = require('@samfuller01/tiny').tiny;
 
 tiny.add(5, 5); // Returns 10
 
@@ -35,4 +35,12 @@ tiny.cos(5); // Returns cos of 5
 tiny.tan(5); // Returns tan of 5
 
 tiny.absoluteValue(-10); // Returns 10
+```
+
+You can also use import statements instead of require statements.
+
+```js
+import { tiny } from '@samfuller01/tiny';
+
+tiny.add(5, 5);
 ```

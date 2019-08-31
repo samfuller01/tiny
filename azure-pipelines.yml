@@ -3,15 +3,15 @@ trigger:
   - releases
 
 pool:
-  vmImage: "ubuntu-latest"
+  vmImage: 'ubuntu-latest'
 
 steps:
   - task: NodeTool@0
     inputs:
-      versionSpec: "10.x"
-    displayName: "Install Node.js"
+      versionSpec: '10.x'
+    displayName: 'Install Node.js'
 
   - script: |
       yarn
       yarn test
-    displayName: "yarn installs Jest and tests code"
+    displayName: 'yarn installs Jest and tests code'

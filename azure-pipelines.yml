@@ -1,5 +1,6 @@
 trigger:
   - master
+  - releases
 
 pool:
   vmImage: "ubuntu-latest"
@@ -13,4 +14,4 @@ steps:
   - script: |
       yarn
       yarn test
-    displayName: "yarn installs dependencies and tests code"
+    displayName: "yarn installs Jest and tests code"

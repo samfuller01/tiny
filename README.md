@@ -5,10 +5,18 @@
 
 This is a super tiny JavaScript package designed to make simple calculations very easy. It also makes some `Math` methods easier to use. In the future I will implement all/most of them.
 
+## Installation
+
+npm installation:
+`npm install @samfuller/tiny`
+
+yarn installation:
+`yarn add @samfuller/tiny`
+
 ## Usage
 
 ```js
-const tiny = require('@samfuller01/tiny);
+const tiny = require("@samfuller01/tiny").tiny;
 
 tiny.add(5, 5); // Returns 10
 
@@ -26,5 +34,5 @@ tiny.cos(5); // Returns cos of 5
 
 tiny.tan(5); // Returns tan of 5
 
-tiny.absoluteValue(-10) // Returns 10
+tiny.absoluteValue(-10); // Returns 10
 ```

@@ -3,10 +3,10 @@
  *
  * @param {number} x
  * @param {number} y
- * @returns {number} x + y
+ * @returns {x + y}
  */
 add = (x, y) => {
-	return x + y;
+  return x + y;
 };
 
 /**
@@ -14,10 +14,10 @@ add = (x, y) => {
  *
  * @param {number} x
  * @param {number} y
- * @returns {number} x - y
+ * @returns {x - y}
  */
 subtract = (x, y) => {
-	return x - y;
+  return x - y;
 };
 
 /**
@@ -25,10 +25,10 @@ subtract = (x, y) => {
  *
  * @param {number} x
  * @param {number} y
- * @returns {number} x * y
+ * @returns {x * y}
  */
 multiply = (x, y) => {
-	return x * y;
+  return x * y;
 };
 
 /**
@@ -36,10 +36,10 @@ multiply = (x, y) => {
  *
  * @param {number} x
  * @param {number} y
- * @returns {number} x / y
+ * @returns {x / y}
  */
 divide = (x, y) => {
-	return x / y;
+  return x / y;
 };
 
 /**
@@ -50,7 +50,7 @@ divide = (x, y) => {
  * @returns {number} x % y
  */
 modulo = (x, y) => {
-	return x % y;
+  return x % y;
 };
 
 /**
@@ -60,7 +60,7 @@ modulo = (x, y) => {
  * @returns {number} Math.sin(number);
  */
 sin = number => {
-	return Math.sin(number);
+  return Math.sin(number);
 };
 
 /**
@@ -70,7 +70,7 @@ sin = number => {
  * @returns {number} Math.cos(number);
  */
 cos = number => {
-	return Math.cos(number);
+  return Math.cos(number);
 };
 
 /**
@@ -80,7 +80,7 @@ cos = number => {
  * @returns {number} Math.tan(number);
  */
 tan = number => {
-	return Math.tan(number);
+  return Math.tan(number);
 };
 
 /**
@@ -90,17 +90,21 @@ tan = number => {
  * @returns {number} Math.abs(number);
  */
 absoluteValue = number => {
-	return Math.abs(number);
+  return Math.abs(number);
+};
+
+const tiny = {
+  add,
+  subtract,
+  multiply,
+  divide,
+  sin,
+  cos,
+  tan,
+  absoluteValue,
+  modulo
 };
 
 module.exports = {
-	add,
-	subtract,
-	multiply,
-	divide,
-	modulo,
-	sin,
-	cos,
-	tan,
-	absoluteValue
+  tiny
 };

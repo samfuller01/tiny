@@ -92,7 +92,7 @@ describe('Shape Calculations', () => {
 
 	test('Triangle area', () => {
 		const area = triangle.area();
-		assert.strictEqual(area, 6);
+		assert.strictEqual(area, 10);
 	});
 
 	test('Triangle perimeter', () => {

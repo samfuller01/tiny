@@ -1,27 +1,33 @@
 {
-  "name": "@samfuller01/tiny",
-  "version": "0.4.0",
-  "description": "A tiny package designed to do tiny calculations",
-  "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/samfuller01/tiny"
-  },
-  "bugs": {
-    "url": "https://github.com/samfuller01/tiny/issues/"
-  },
-  "author": "Sam Fuller",
-  "license": "MIT",
-  "private": false,
-  "keywords": [
-    "tiny",
-    "npm",
-    "math"
-  ],
-  "devDependencies": {
-    "jest": "^24.9.0"
-  },
-  "scripts": {
-    "test": "jest"
-  }
+	"name": "@samfuller01/tiny",
+	"version": "0.4.0",
+	"description": "A tiny package designed to do tiny calculations",
+	"main": "index.js",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/samfuller01/tiny"
+	},
+	"bugs": {
+		"url": "https://github.com/samfuller01/tiny/issues/"
+	},
+	"author": "Sam Fuller",
+	"license": "MIT",
+	"private": false,
+	"keywords": [
+		"tiny",
+		"npm",
+		"math"
+	],
+	"devDependencies": {
+		"husky": "^3.0.5",
+		"jest": "^24.9.0"
+	},
+	"scripts": {
+		"test": "jest"
+	},
+	"husky": {
+		"hooks": {
+			"pre-commit": "yarn test"
+		}
+	}
 }

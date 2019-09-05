@@ -47,7 +47,7 @@ divide = (x, y) => {
  *
  * @param {number} x
  * @param {number} y
- * @returns {number} x % y
+ * @returns {x % y}
  */
 modulo = (x, y) => {
 	return x % y;
@@ -57,7 +57,7 @@ modulo = (x, y) => {
  * Sine of a number
  *
  * @param {number} number
- * @returns {number} Math.sin(number);
+ * @returns {Math.sin(number)}
  */
 sin = number => {
 	return Math.sin(number);
@@ -67,7 +67,7 @@ sin = number => {
  * Cosine of a number
  *
  * @param {number} number
- * @returns {number} Math.cos(number);
+ * @returns {Math.cos(number)}
  */
 cos = number => {
 	return Math.cos(number);
@@ -77,7 +77,7 @@ cos = number => {
  * Tangent of a number
  *
  * @param {number} number
- * @returns {number} Math.tan(number);
+ * @returns {Math.tan(number)}
  */
 tan = number => {
 	return Math.tan(number);
@@ -87,11 +87,85 @@ tan = number => {
  * Absolute value of a number
  *
  * @param {number} number
- * @returns {number} Math.abs(number);
+ * @returns {Math.abs(number)}
  */
 absoluteValue = number => {
 	return Math.abs(number);
 };
+
+class Circle {
+	constructor(radius) {
+		this.radius = radius;
+	}
+
+	area() {
+		return Math.PI * this.radius * this.radius;
+	}
+
+	perimeter() {
+		return 2 * Math.PI * this.radius;
+	}
+
+	diameter() {
+		return 2 * this.radius;
+	}
+}
+
+class Square {
+	constructor(side) {
+		this.side = side;
+	}
+
+	area() {
+		return this.side * this.side;
+	}
+
+	perimeter() {
+		return this.side * 4;
+	}
+
+	diagonal() {
+		return Math.sqrt(2) * this.side;
+	}
+}
+
+class Rectangle {
+	constructor(length, width) {
+		this.length = length;
+		this.width = width;
+	}
+
+	area() {
+		return this.length * this.width;
+	}
+
+	perimeter() {
+		return 2 * (this.length + this.width);
+	}
+
+	diagonal() {
+		return Math.sqrt(Math.pow(this.length, 2) + Math.pow(this.width, 2));
+	}
+}
+
+class Triangle {
+	constructor(side1, side2, side3) {
+		this.side1 = side1;
+		this.side2 = side2;
+		this.side3 = side3;
+	}
+
+	area() {
+		const s = (this.side1 + this.side2 + this.side3) / 2;
+		return Math.sqrt(
+			s * ((s - this.side1) * (s - this.side2) * (s - this.side3))
+		);
+	}
+
+	perimeter() {
+		return this.side1 + this.side2 + this.side3;
+	}
+}
 
 const tiny = {
 	add,
@@ -102,7 +176,11 @@ const tiny = {
 	cos,
 	tan,
 	absoluteValue,
-	modulo
+	modulo,
+	Circle,
+	Square,
+	Rectangle,
+	Triangle
 };
 
 module.exports = {

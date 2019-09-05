@@ -137,7 +137,7 @@ rectangle.diagonal(); // Returns 11.180339887498949
 
 ## Triangle
 
-Triangle is a class taht contains numerous calcualtions relating to triangles. It accepts three parameters which are the three side lengths.
+Triangle is a class that contains numerous calcualtions relating to triangles. It accepts three parameters which are the three side lengths.
 
 > NOTE: The triangle class assumes that the first two parameters are the base and height of the triangle.
 
@@ -159,4 +159,4 @@ tiny.add(5, 5);
 
 # License
 
-This project is licensed under the MIT license.
+This project is available under the MIT license.

@@ -1,5 +1,5 @@
 const assert = require('assert');
-const tiny = require('./index').tiny;
+const tiny = require('./index');
 
 describe('Testing basic math functions', () => {
 	test('Adds two numbers', () => {
@@ -40,63 +40,52 @@ describe('Testing basic math functions', () => {
 });
 
 describe('Shape Calculations', () => {
-	const circle = new tiny.Circle(5);
-	const square = new tiny.Square(5);
-	const rectangle = new tiny.Rectangle(5, 10);
-	const triangle = new tiny.Triangle(5, 4, 3);
+	const circle = new tiny.Circle;
+	const square = new tiny.Square;
+	const rectangle = new tiny.Rectangle;
+	const triangle = new tiny.Triangle;
 
 	test('Circle area', () => {
-		const area = circle.area();
-		assert.strictEqual(area, 78.53981633974483);
+		assert.strictEqual(circle.area(5), 78.53981633974483);
 	});
 
 	test('Circle perimeter', () => {
-		const perimeter = circle.perimeter();
-		assert.strictEqual(perimeter, 31.41592653589793);
+		assert.strictEqual(circle.perimeter(5), 31.41592653589793);
 	});
 
 	test('Circle diameter', () => {
-		const diameter = circle.diameter();
-		assert.strictEqual(diameter, 10);
+		assert.strictEqual(circle.diameter(5), 10);
 	});
 
 	test('Square area', () => {
-		const area = square.area();
-		assert.strictEqual(area, 25);
+		assert.strictEqual(square.area(5), 25);
 	});
 
 	test('Square perimeter', () => {
-		const perimeter = square.perimeter();
-		assert.strictEqual(perimeter, 20);
+		assert.strictEqual(square.perimeter(5), 20);
 	});
 
 	test('Square diagonal', () => {
-		const diagonal = square.diagonal();
-		assert.strictEqual(diagonal, 7.0710678118654755);
+		assert.strictEqual(square.diagonal(5), 7.0710678118654755);
 	});
 
 	test('Rectangle area', () => {
-		const area = rectangle.area();
-		assert.strictEqual(area, 50);
+		assert.strictEqual(rectangle.area(5, 10), 50);
 	});
 
 	test('Rectangle perimeter', () => {
-		const perimeter = rectangle.perimeter();
-		assert.strictEqual(perimeter, 30);
+		assert.strictEqual(rectangle.perimeter(5, 10), 30);
 	});
 
 	test('Rectangle diagonal', () => {
-		const diagonal = rectangle.diagonal();
-		assert.strictEqual(diagonal, 11.180339887498949);
+		assert.strictEqual(rectangle.diagonal(5, 10), 11.180339887498949);
 	});
 
 	test('Triangle area', () => {
-		const area = triangle.area();
-		assert.strictEqual(area, 10);
+		assert.strictEqual(triangle.area(5, 4), 10);
 	});
 
 	test('Triangle perimeter', () => {
-		const perimeter = triangle.perimeter();
-		assert.strictEqual(perimeter, 12);
+		assert.strictEqual(triangle.perimeter(5, 4, 3), 12);
 	});
 });

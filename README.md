@@ -1,10 +1,9 @@
 # tiny
 
-![npm (scoped)](https://img.shields.io/npm/v/@samfuller01/tiny.svg)
+[![npm version](https://badge.fury.io/js/%40samfuller01%2Ftiny.png)](https://badge.fury.io/js/%40samfuller01%2Ftiny)
 [![Build Status](https://dev.azure.com/spfuller01/tiny/_apis/build/status/samfuller01.tiny?branchName=master)](https://dev.azure.com/spfuller01/tiny/_build/latest?definitionId=4&branchName=master)
 
-![Tiny Logo](https://github.com/samfuller01/tiny/blob/master/images/logo.jpg)
-
+<img src="https://github.com/samfuller01/tiny/blob/master/images/logo.jpg" data-canonical-src="https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png" width="400" height="400" />
 This is a super tiny(heh, get it?) JavaScript package designed to make simple calculations very easy. It also allows you to perform basic mathematical operations on shapes.
 
 ## Installation
